@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Gelasio', serif;
+}
+
+header ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header ul.topnav li {
+    float: left;
+}
+
+header ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 66px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    header ul.topnav li a {
+        display: block !important;
+    }
+}
+
+header ul.topnav li a:hover:not(.active) {
+    background-color: red;
+}
+
+header ul.topnav li a.active {
+    background-color: black;
+}
+
+header ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+.box-intro h1{
+    color: white;
+}
+
+.box-intro h2{
+    font-size: 15px;
+    color: white;
+    margin-left: 50px;
+}
+
+.box-intro{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.image-holder{
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/girl.jpg");
+    background-size: cover;
+    position: absolute;
+    margin-top: 0;
+}
+
+.button_c {
+    margin-left: 100px;
+    border-radius: 30px;
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.button_c:hover {
+    color: #ffffff !important;
+    background: purple;
+    border-color: transparent !important;
+    transition: all 0.4s ease 0s;
+}
+
+.parent {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+}
+
+.music {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 1px solid white;
+}
+
+.music:hover {
+   border: 2px solid purple;
+}
+
+.tracks:hover {
+    border: 2px solid purple;
+}
+
+.tracks {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 1px solid white;
+}
+
+.container {
+    width: 80%;
+    background-color: #ddd;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html {
+    width: 40%; background-color: purple;
+}
+
+.html:hover {
+    width: 98%; background-color: purple;
+    text-align: center;
+}
+
+.parent h1{
+    font-size: 35px;
+}
+
+p{
+    font-size: 15px;
+}
+
+#Top_50{
+    margin-top: 800px;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+#Top_50 .top-50-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    list-style: none;
+}
+
+@media screen and ( max-width: 1900px) {
+    #Top_50 .top-50-content{
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(10, 1fr) !important;
+    }
+
+}
+
+@media screen and ( max-width: 1400px) {
+    #Top_50 .top-50-content{
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(10, 1fr) !important;
+    }
+
+}
+
+@media screen and ( max-width: 1008px) {
+    #Top_50 .top-50-content{
+        display: block;
+    }
+
+}
+
+#Top_50 li{
+    border: 1px solid purple;
+    text-align: center;
+    color: white;
+}
+
+#Top_50 img{
+    width: 400px;
+}
+
+#Top_50 h1{
+    font-size: 40px;
+}
+
+
+#Top_50 a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+#Top_50 a:hover{
+    font-size: 42px;
+    color: yellow;
+}
+
+#aplicatie h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+#aplicatie .phone-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 400px;
+    grid-row-gap: 0px;
+    list-style: none;
+}
+
+.iphone-image{
+    border-radius: 30px;
+    background-image: url("../img/iph.jpg");
+    width: 400px;
+    height: 600px;
+}
+
+@media screen and (max-width: 1000px){
+    #aplicatie .phone-box{
+        grid-column-gap: 0 !important;
+    }
+    #aplicatie .iphone-image{
+       width: 350px !important;
+    }
+}
+
+@media screen and (max-width: 569px){
+    #aplicatie .phone-box{
+       display: inline-block !important;
+    }
+    #aplicatie .iphone-image{
+        width: 300px !important;
+    }
+    img{
+        width: 100% !important;
+    }
+}
+
+#aplicatie .phone-box li h1:hover{
+    color: yellow;
+}
+
+#oferte h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+.sound-hold{
+    display: inline;
+    width: 400px;
+    height: 700px;
+}
+
+#volume-t{
+    color: white;
+    font-size: 40px;
+}
